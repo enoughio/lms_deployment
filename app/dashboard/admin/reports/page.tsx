@@ -563,6 +563,7 @@ export default function ReportsPage() {
                       { label: "Premium", value: 85 },
                       { label: "Basic", value: 45 },
                       { label: "Student", value: 25 },
+                      { label: "Free", value: 10 },
                     ].map((item, i) => (
                       <div key={i} className="relative flex h-full flex-1 flex-col justify-end">
                         <div

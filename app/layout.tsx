@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "LibraryHub - Modern Library Management System",
   description: "A comprehensive platform for library management, seat booking, and digital resources",
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({
