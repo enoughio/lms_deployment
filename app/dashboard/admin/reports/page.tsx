@@ -563,4 +563,22 @@ export default function ReportsPage() {
                       { label: "Premium", value: 85 },
                       { label: "Basic", value: 45 },
                       { label: "Student", value: 25 },
-                    \
+                    ].map((item, i) => (
+                      <div key={i} className="relative flex h-full flex-1 flex-col justify-end">
+                        <div
+                          className="w-full rounded-md bg-primary/20"
+                          style={{ height: `${item.value}%` }}
+                        ></div>
+                        <span className="mt-2 text-center text-xs text-muted-foreground">{item.label}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </CardContent>
+            </Card>
+          </TabsContent>
+        </Tabs>
+      </div>
+    </div>
+  )
+}
